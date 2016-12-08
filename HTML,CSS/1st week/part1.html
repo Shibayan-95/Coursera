@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Dating Site</title>
+</head>
+
+<body>
+   <form action="https://demo.htm">
+      <h1>Please Enter Your Details For Our Dating Website</h1>
+      <fieldset>
+         <legend>Your Face</legend>
+         <p>
+            <label for="myimage"> Your Image: </label>
+            <input type="file" id="myimage" required="required">
+         </p>
+         <p>
+            <label for="preview"> Image preview: </label><img src="" id="preview" name="preview">
+         </p>
+      </fieldset>
+      <fieldset>
+         <legend>Your General Details</legend>
+         <p>
+            <label for="name"> Name: </label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required="required">
+         </p>
+         <p>
+            <label for="gender"> Gender: </label>
+            <input type="radio" id="gender" name="gender">Male
+            <input type="radio" name="gender">Female
+         </p>
+         <p>
+            <label for="age"> Age: </label>
+            <input type="number" required="required" id="age" name="age">
+         </p>
+         <p>
+            <label for="dob"> Date of birth: </label>
+            <input type="date" id="dob" name="dob">
+         </p>
+         <p>
+            <label for="color"> Favorite color: </label>
+            <input type="color" id="color" name="color">
+         </p>
+         <p>
+            <label for="country"> Which Country: </label>
+            <select id="country" name="country">
+               <option value="none">-no selection-</option>
+               <option value="India">India</option>
+               <option value="USA">USA</option>
+               <option value="Russia">Russia</option>
+               <option value="China">China</option>
+               <option value="England">England</option>
+            </select>
+         </p>
+      </fieldset>
+      <fieldset>
+         <legend>Your Indicators</legend>
+         <p>
+            <label for="height"> Height: </label>
+            <label for="height"> Short </label>
+            <input type="range" id="height" name="height" min="0" max="100">
+            <label for="height">Tall</label>
+         </p>
+         <p>
+            <label for="salary"> Salary: </label>
+            <label for="salary"> Poor </label>
+            <input type="range" id="salary" name="salary" min="0" max="100">
+            <label for="salary">Rich</label>
+         </p>
+      </fieldset>
+      <fieldset>
+         <legend>Your Contact Information</legend>
+         <p>
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email" required="required">
+         </p>
+         <p>
+            <label for="mobile"> Mobile: </label>
+            <input type="tel" id="mobile" name="mobile">
+         </p>
+         <p>
+            <label for="address"> Address: </label>
+            <textarea id="address" name="address"></textarea>
+         </p>
+         <p>
+            <label for="contact">Methood to contact me: </label>
+            <input type="checkbox" id="contact" name="contact" value="email"><label for="contact"> Email</label>
+            <input type="checkbox" id="contact" name="contact" value="whatsapp"><label for="contact">Whatsapp</label>
+            <input type="checkbox" id="contact" name="contact" value="in-appchat"><label for="contact">In-app chat</label></p>
+      </fieldset>
+      <p>
+         <input type="submit" name="submit">
+      </p>
+   </form>
+
+</body>
+
+</html>
