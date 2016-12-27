@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.wrapper{
+			position: relative;
+		}
+		.button{
+			position: absolute;
+			float: left;
+			height: 200px;
+			width: 100px;
+			background-color: lightblue;
+		}
+		.button2{
+			position: absolute;
+			height: 200px;
+			width: 100px;
+			background-color: lightblue;
+			animation: foraddbutton ease-out 4s;
+		}
+		.adddiv{
+			position: absolute;
+			float: left;
+			width:200px;
+			height: 200px;
+			background-color: red;
+            animation: foradd ease-out 4s;
+		}
+		@keyframes foradd{
+			0%{width:0px;}
+			90%{width: 200px;}                                /*Work from here*/
+			100%{width: 200px;left: 100px;}
+		}
+		@keyframes foraddbutton{
+			0%{width:0px;}
+			100%{width: 100px;}
+		}
+	</style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<body>
+<div class="wrapper">
+<div class="button"></div>
+<div id="div"></div>
+</div>
+<script type="text/javascript">
+$("document").ready(function(){
+	$(".button").click(function (){
+		$(".button").fadeOut("fast");
+	    setTimeout(function(){$("#div").addClass("adddiv");},500);
+        setTimeout(function(){$("#div").append("<div class='button2'>Add page</div>").fadeIn();},5000);
+		});
+        
+   }
+);
+	//	$(".adddiv").css("display","block");
+
+</script>
+</body>
+</html>
